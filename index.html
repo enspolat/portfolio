@@ -1,23 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body>
-<div>
-    <div class=" flex  justify-between ">
-    <img class="w-10 ml-12 mt-3" src="img.png" alt="">
-    <button class="hover:bg-red-700 text-xl text-red-700 hover:text-white rounded-lg border-red-800 w-24 text-center border-2 mr-12 mt-3 align-center">
-        Contact
-    </button>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-gray-100">
+      <div class="flex justify-between m-0 p-10">
+        <img class="w-14 ml-20 " src="img.png" alt="" />
+        <a
+          href="#contact"
+          class="
+            hover:bg-red-900
+            text-xl text-red-700
+            hover:text-white
+            rounded-lg
+            border-red-800
+            text-center
+            border-2
+            mr-12
+            p-4
+            align-center
+          "
+        >
+          Contact
+        </a>
+      </div>
+      <div
+        class="
+          px-16
+          py-20
+          items-center
+          text-center
+          flex flex-col
+          m-0
+          display-block
+        "
+      >
+        <p class="p-2 text-5xl">Designer, Front-end Developer & Mentor</p>
+        <p class="p-4 text-3xl">
+          I design and code beautifully simple things, and I love what I do.
+        </p>
+        <div class="p-4">
+          <img
+            class="w-40 bg-yellow-900 pl-3 rounded-full"
+            src="img2.png"
+            alt=""
+          />
+        </div> <p class="text-xl"> My Links</p>
+         <div class="flex p-4">
+          
+        <a class="m-4" href="https://www.linkedin.com/in/enes-polat-08b65b208/"> <img class="w-20 " src="icon.svg" alt=""></a> 
+        <a class="m-4" href="https://github.com/enspolat"><img class="w-20 " src="icon1.svg" alt=""></a>  
+        <a class="m-4" href="mailto:enes@bixos.com"><img class="w-20 " src="img_358140.png" alt=""></a>  
+      </div>
+      </div>
+    
+      <div
+        class="
+          bg-yellow-900
+          text-white
+          leading-10
+          h-1/2
+          flex flex-col
+          text-center
+          items-center
+        "
+      >
+        <span class="text-3xl p-12">Hi, I’m Enes. Nice to meet you. </span>
+        <div class="w-full p-6 md:w-1/2">
+          <span class="text-xl p-6 leading-8 ">
+            I'm a front-end developer and still improving myself.
+            I have been in software business since I was 15 years old. Courses such as c# and js that
+            I took in high school became the focus of my attention and I am currently working as a
+            frontend developer in a software company.</span
+          >
+        </div>
+      </div>
+      <section
+        id="contact"
+        class="
+          py-10
+          px-4
+          bg-gray-100
+          dark:bg-gray-900
+          text-black
+          dark:text-white
+        "
+      >
+        <h1
+          class="
+            mb-10
+            text-2xl
+            md:text-4xl
+            font-bold
+            text-center
+            sm:p-2
+            font-bold font-heading
+          "
+        >
+          Contact
+         Me
+        </h1>
+        <div class="w-full max-w-2xl mx-auto mb-12">
+          <form class="">
+            <div class="flex flex-col mb-6 mx-4 items-center m-auto ">
+              <div class=" w-4/5 md:w-full mb-6 md:mb-0 p-4 ">
+                <span>Email</span>
+                <input
+                  type="email"
+                  class="
+                    appearance-none
+                    block
+                    w-full
+                    py-3
+                    px-4
+                    leading-tight
+                    text-gray-700
+                    focus:bg-white
+                    border
+                    shadow
+                    rounded
+                    outline-none
+                    border-gray-300
+                    focus:border-gray-500
+                    rounded-t-xl 
+                    focus:outline-none
+                  "
+                />
+              </div>
+              <div class="w-4/5 md:w-full  p-4">
+                <span>Name</span>
+                <input
+                  type="text"
+                  class="
+                    appearance-none
+                    block
+                    w-full
+                    py-3
+                    px-4
+                    leading-tight
+                    text-white
+                    focus:bg-white
+                    border
+                    shadow
+                    rounded
+                    outline-none
+                    border-gray-300
+                    focus:border-gray-500
+                    rounded-t-xl
+                    focus:outline-none
+                  "
+                />
+              </div>
+              <div class="w-full mb-12 ">
+                  <span class=" ml-16">Message</span>
+                <textarea
+                  class="
+                    appearance-none
+                    block
+                    w-4/5
+                    bg-background-form
+                    leading-tight
+                    text-gray-700
+                    bg-gray-50
+                    border border-gray-300
+                    shadow
+                    rounded
+                    outline-none
+                    focus:border-gray-500
+                    rounded-t-xl 
+                    focus:outline-none
+                    px-4
+                    py-4
+                   m-auto
+                  "           
+                >  </textarea>
+              </div>
+              <div class="flex w-4/5 p-4  justify-center">
+                <button
+                  class="
+                    inline-block
+                    w-1/2
+                    bg-yellow-900
+                    hover:bg-yellow-700
+                    text-white text-sm
+                    tracking-wide
+                    font-bold
+                    shadow
+                    rounded
+                    outline-none
+                    px-4
+                    py-5
+                    rounded-8
+                    text-center
+                  "
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
     </div>
-    <div>
-        <span> Designer, Front-end Developer & Mentor</span>
-    </div>
-</div>
-</body>
+  </body>
 </html>
